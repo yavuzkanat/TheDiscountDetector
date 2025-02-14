@@ -4,7 +4,8 @@ from PyQt6.QtGui import QColor
 from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton, QListWidget, QListWidgetItem,QLineEdit
 import appFeature.zaraReq
 import json
-
+import os 
+os.remove("zara_products.json")
 class ZaraScraperApp(QWidget):
     def __init__(self):
         super().__init__()
@@ -39,9 +40,7 @@ class ZaraScraperApp(QWidget):
         appFeature.zaraReq.ZaraDataScrapper(url).GetAllProducts()
         with open("zara_products.json",'r',encoding='utf-8') as file :
             data=json.load(file)
-            for p in data : 
-                if(p.get("Error")=="Connection Error"):
-                    sys.exit(1)
+           
 
             for product in data:
                 link = product.get("link")
