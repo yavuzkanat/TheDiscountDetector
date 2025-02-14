@@ -27,7 +27,7 @@ The Discount Detector is a Python application designed to help users identify an
     ```bash
     python3 app.py
 
-5. **🤝 Contributing**
+## 🤝 Contributing**
 
     Contributions are welcome! To contribute:
         1.	Fork the repository.
@@ -35,7 +35,7 @@ The Discount Detector is a Python application designed to help users identify an
         3.	Commit your changes: git commit -m "Add new feature".
         4.	Push to the branch: git push origin feature/your-feature-name.
         5.	Submit a pull request.
-6. 📜 License
+## 📜 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 
