@@ -33,15 +33,15 @@ class ZaraDataScrapper:
                 
                 # Old Price (eğer varsa)
                 old_price = item.find("span", class_="price-old__amount")
-                old_price = old_price.text.strip() if old_price else "Yok"
+                old_price = old_price.text.strip() if old_price else "NONE"
 
                 # Current Price
                 current_price = item.find("span", class_="price-current__amount")
-                current_price = current_price.text.strip() if current_price else "Yok"
+                current_price = current_price.text.strip() if current_price else "NONE"
 
                 # Stock Status 
                 stock_status = item.find("button", class_="zds-button--disabled")
-                stock_status = stock_status.text.strip() if stock_status else "Stokta var"
+                stock_status = stock_status.text.strip() if stock_status else "IN STOCK"
 
                 # Verileri yazdır
                 product_data = {
