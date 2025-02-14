@@ -27,7 +27,7 @@ The Discount Detector is a Python application designed to help users identify an
     ```bash
     python3 app.py
 
-## 🤝 Contributing**
+## 🤝 Contributing
 
     Contributions are welcome! To contribute:
         1.	Fork the repository.
