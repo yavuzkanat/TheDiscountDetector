@@ -1,0 +1,5 @@
+beautifulsoup4==4.13.3
+fake_headers==1.0.2
+PyQt6==6.8.1
+PyQt6_sip==13.10.0
+Requests==2.32.3
