@@ -5,7 +5,8 @@ from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushBut
 import appFeature.zaraReq
 import json
 import os 
-os.remove("zara_products.json")
+if(os.path.isfile("zara_products.json")):
+    os.remove("zara_products.json")
 class ZaraScraperApp(QWidget):
     def __init__(self):
         super().__init__()
